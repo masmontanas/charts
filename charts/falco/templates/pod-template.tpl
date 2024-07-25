@@ -84,10 +84,6 @@ spec:
       env:
         - name: HOST_ROOT
           value: /host
-        - name: FALCO_HOSTNAME
-          valueFrom:
-            fieldRef:
-              fieldPath: spec.nodeName
         - name: FALCO_K8S_NODE_NAME
           valueFrom:
             fieldRef:
